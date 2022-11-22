@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Yeshtery/static/css/main.b8f04cbd.chunk.css",
+    "main.js": "/Yeshtery/static/js/main.7ba9b8b3.chunk.js",
+    "main.js.map": "/Yeshtery/static/js/main.7ba9b8b3.chunk.js.map",
+    "runtime-main.js": "/Yeshtery/static/js/runtime-main.6a450a9a.js",
+    "runtime-main.js.map": "/Yeshtery/static/js/runtime-main.6a450a9a.js.map",
+    "static/css/2.4b64616d.chunk.css": "/Yeshtery/static/css/2.4b64616d.chunk.css",
+    "static/js/2.10961395.chunk.js": "/Yeshtery/static/js/2.10961395.chunk.js",
+    "static/js/2.10961395.chunk.js.map": "/Yeshtery/static/js/2.10961395.chunk.js.map",
+    "static/js/3.37f2c1d5.chunk.js": "/Yeshtery/static/js/3.37f2c1d5.chunk.js",
+    "static/js/3.37f2c1d5.chunk.js.map": "/Yeshtery/static/js/3.37f2c1d5.chunk.js.map",
+    "index.html": "/Yeshtery/index.html",
+    "static/css/2.4b64616d.chunk.css.map": "/Yeshtery/static/css/2.4b64616d.chunk.css.map",
+    "static/css/main.b8f04cbd.chunk.css.map": "/Yeshtery/static/css/main.b8f04cbd.chunk.css.map",
+    "static/js/2.10961395.chunk.js.LICENSE.txt": "/Yeshtery/static/js/2.10961395.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/Yeshtery/static/media/fa-solid-900.eeccf4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a450a9a.js",
+    "static/css/2.4b64616d.chunk.css",
+    "static/js/2.10961395.chunk.js",
+    "static/css/main.b8f04cbd.chunk.css",
+    "static/js/main.7ba9b8b3.chunk.js"
+  ]
+}
