@@ -1,0 +1,33 @@
+.top-header {
+  background-color: $secondary-color;
+  .top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    font-size: $text-body;
+    .top-item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a {
+          padding-inline: 10px;
+          text-decoration: underline !important;
+          font-weight: 600;
+          color: $black;
+        }
+      }
+    }
+  }
+}

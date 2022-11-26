@@ -40,11 +40,7 @@ export const Main: React.FC<any> = () => {
   }, []);
 
   const AllProducts = products?.map((product: any) => (
-    <Item
-      product={product}
-      key={product.id}
-      handleClickCard={handleClickCard}
-    />
+    <Item product={product} key={product.id} />
   ));
 
   return (

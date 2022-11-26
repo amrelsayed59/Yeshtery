@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import Header from './Header';
 
 const MainLayout: React.FC<any> = (props) => {
@@ -8,6 +9,7 @@ const MainLayout: React.FC<any> = (props) => {
       <div className="bg-gray-100" {...props}>
         {props.children}
       </div>
+      <Footer />
     </>
   );
 };

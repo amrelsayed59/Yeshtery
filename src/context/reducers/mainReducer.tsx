@@ -7,6 +7,9 @@ const Main: React.FC<any> = (state, action) => {
       localStorage.setItem('search_history', JSON.stringify(action.payload));
       return { ...state, search_History: action.payload };
 
+    case 'default_logo':
+      return { ...state, default_logo: action.payload };
+
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     }

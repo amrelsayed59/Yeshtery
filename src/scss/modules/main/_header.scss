@@ -1,25 +1,70 @@
 .header {
   padding: 0.5rem;
-  background: $primary-color;
-  color: $white;
+  background: $white;
+  color: $black;
+  display: flex;
+  align-items: center;
+  height: 80px;
   &__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
+  &__search {
+    .search-form {
+      width: 280px;
+      background: #fff 0 0 no-repeat padding-box;
+      border: 1px solid #00000026;
+      border-radius: 24px;
+      display: flex;
+      flex-direction: row;
+      height: 48px;
+      padding: 10px 16px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      .search-button {
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0 6px 5px 2px;
+      }
+      .search-input {
+        color: $black;
+        font-size: $text-headline;
+        font-weight: 700;
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
   &__cart {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
 
     .count {
       position: absolute;
       left: 20px;
       top: -6px;
-      background: white;
+      background: $secondary-color;
       border-radius: 50%;
       color: black;
       width: 15px;
@@ -31,30 +76,48 @@
   }
 
   &__cart-box {
-    position: relative;
-
     .drop-box {
       position: absolute;
       background: white;
-      color: black;
-      width: 300px;
-      padding: 0.5rem;
-      top: 41px;
+      color: $black;
+      width: 475px;
+      padding: 0.5rem 0.8rem;
       right: 0;
-      box-shadow: 3px 4px 8px -3px grey;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      box-shadow: 0 0 5px #00000026;
+      .close-box {
+        display: flex;
+        flex-direction: row-reverse;
+        cursor: pointer;
+        padding: 5px;
+      }
       .drop-title {
         padding-block: 10px;
-        border-bottom: 1px solid #e7e7e7;
         color: $black;
+        font-weight: 600;
+        text-align: center;
+        > p {
+          color: $primary-color;
+          font-size: $text-title3;
+        }
+      }
+      .cart-summary {
+        margin-block: 20px;
         font-weight: 600;
       }
       .drop-items {
         padding-inline: 5px;
         .drop-li {
           display: flex;
-          align-items: center;
+          align-items: baseline;
           justify-content: space-between;
           padding-block: 10px;
+          padding-inline: 5px;
+          border: 1px solid #ececec;
+          border-radius: 7px;
+          margin-bottom: 10px;
         }
         .drop-product {
           display: flex;
@@ -72,30 +135,36 @@
           .drop-details {
             width: 80%;
             h6 {
-              font-size: 14px;
+              font-size: $text-body;
               font-weight: 600;
             }
             p {
-              font-size: 14px;
+              font-size: $text-body;
               font-weight: normal;
               color: $primary-color;
               padding-top: 5px;
               font-weight: 600;
             }
-          }
-        }
-        .drop-remove {
-          i {
-            color: #7c7c7c;
-            transition: all 0.3s ease-in-out;
-            cursor: pointer;
-            &:hover {
+            .quantity {
               color: $black;
             }
           }
         }
+        .drop-remove {
+          color: $black;
+          font-size: $text-caption;
+          background: $secondary-color;
+          border-radius: $text-caption;
+          width: 80px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+          cursor: pointer;
+        }
         .empty-cart {
-          color: #542e90;
+          color: $primary-color;
           text-align: center;
           display: flex;
           align-items: center;
@@ -105,14 +174,52 @@
           font-weight: 600;
         }
       }
+      .total-price {
+        padding-block: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: $text-subtitle;
+      }
+      .review-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-block: 15px;
+
+        button {
+          padding: 12px 35px;
+          border-radius: 27px;
+          border: none;
+          overflow: hidden;
+          font-weight: bold;
+          cursor: pointer;
+          font-size: $text-body;
+          transition: all 0.3s ease-in-out;
+          height: 54px;
+          min-width: 196px;
+        }
+
+        .button-cart {
+          background-color: $primary-color;
+          color: $white;
+        }
+
+        .button-pickup {
+          background-color: $secondary-color;
+          color: $black;
+        }
+      }
     }
   }
   &__logo {
     width: 10%;
+    img {
+      object-fit: contain;
+    }
   }
 
   &__logo-img {
-    width: 100px;
+    width: 85px;
   }
 }
 

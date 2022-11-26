@@ -1,0 +1,195 @@
+.details-section {
+  padding-block: 40px;
+  .details-box {
+    display: flex;
+    gap: 40px;
+    .gallery-box {
+      width: 40%;
+      .big-img {
+        height: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .thumbnails {
+        display: flex;
+        margin-top: 10px;
+        gap: 10px;
+        li {
+          width: 99.25px;
+          border-radius: 5px;
+          overflow: hidden;
+          &:first-child,
+          &:last-child {
+            width: 15px;
+            cursor: pointer;
+          }
+          .icon {
+            width: 10px;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .details-content {
+      width: 60;
+      .product-title {
+        text-transform: capitalize;
+        margin-block: 10px;
+        font-weight: 600;
+      }
+      .rate-box {
+        display: flex;
+        gap: 15px;
+        margin-block: 15px;
+        font-size: $text-body;
+        .rate-icon {
+          display: flex;
+          gap: 1px;
+          color: #ffb900;
+        }
+        .rate-name {
+          font-weight: bold;
+          color: $black;
+        }
+      }
+      .price-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 10px;
+        .product-price {
+          color: $primary-color;
+          font-size: $text-subtitle;
+          font-weight: bold;
+        }
+        .product-offer {
+          color: #a7a9ac;
+          text-decoration: line-through;
+          font-weight: bold;
+          font-size: $text-body;
+        }
+        .product-percent {
+          background: $secondary-color;
+          font-size: $text-caption;
+          padding: 5px 15px;
+          border-radius: 5px;
+          font-weight: bold;
+          color: $black;
+        }
+      }
+
+      .size-box {
+        padding-block: 20px;
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 10px;
+        .title {
+          font-weight: bold;
+        }
+        .size-ul {
+          display: flex;
+          padding-top: 15px;
+          gap: 15px;
+          li {
+            border: 1px solid #d9d9d9;
+            width: 75px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: $primary-color;
+            font-weight: 600;
+            font-size: $text-caption;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            &:hover {
+              background: #ececec;
+            }
+            .img-li {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .quantity-box {
+        padding-block: 20px;
+        .title {
+          font-weight: bold;
+        }
+        .quantity-count {
+          background: #f5f5f5;
+          width: 50%;
+          border: 0.5px solid #d9d9d9;
+          border-radius: 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.4rem;
+          margin-top: 20px;
+          i {
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            background: $secondary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: $text-body;
+          }
+        }
+      }
+
+      .product-button {
+        padding-block: 15px;
+        display: flex;
+        gap: 30px;
+
+        button {
+          padding: 12px 35px;
+          border-radius: 27px;
+          border: none;
+          overflow: hidden;
+          font-weight: bold;
+          cursor: pointer;
+          font-size: $text-body;
+          transition: all 0.3s ease-in-out;
+          height: 54px;
+          min-width: 252px;
+        }
+
+        .button-cart {
+          background-color: $primary-color;
+          color: $white;
+        }
+
+        .button-pickup {
+          background-color: $secondary-color;
+          color: $black;
+        }
+      }
+    }
+  }
+  .similar-product {
+    padding-top: 1rem;
+    .head {
+      color: $primary-color;
+      font-size: $text-title4;
+      font-weight: bold;
+    }
+    .description {
+      color: #575756;
+      font-size: $text-headline;
+      padding-top: 5px;
+    }
+  }
+}

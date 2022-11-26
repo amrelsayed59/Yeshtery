@@ -1,11 +1,13 @@
 import React, { createContext, useContext, useReducer } from 'react';
 import mainReducer from './reducers/mainReducer';
+import blackLogo from '../assets/images/black-logo.svg';
 
 const mainContext = createContext<any>(undefined);
 const mainDispatchContext = createContext<any>(undefined);
 const initialState: any = {
   searchHistory:
     JSON.parse(String(localStorage.getItem('search_history'))) ?? [],
+  default_logo: blackLogo,
 };
 
 function useMainState() {

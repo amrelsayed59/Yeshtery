@@ -6,13 +6,13 @@
 }
 
 :root {
-  font-size: 16px !important;
+  font-size: $text-headline !important;
   background-color: $gray-100;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  background: #fcfcfc;
 }
 
 .container {
@@ -37,6 +37,9 @@ body {
 .pb-1 {
   padding-bottom: 0.25rem !important;
 }
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
 .font-12 {
   font-size: $text-caption;
 }
@@ -47,6 +50,10 @@ body {
 
 .text-uppercase {
   text-transform: uppercase !important;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .load-more {
@@ -135,7 +142,7 @@ body {
   animation: sk-chase-dot 2s infinite ease-in-out both;
 }
 .sk-chase-dot:before {
-  content: "";
+  content: '';
   display: block;
   width: 25%;
   height: 25%;
@@ -216,7 +223,7 @@ body {
     .title {
       padding-top: 1rem;
       font-weight: 700;
-      font-size: 20px;
+      font-size: $text-title3;
     }
     p {
       font-weight: 700;

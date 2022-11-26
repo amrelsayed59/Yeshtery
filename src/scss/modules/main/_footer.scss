@@ -1,0 +1,88 @@
+.footer {
+  background-color: #3c3c3b;
+  min-height: 200px;
+  padding: 2rem;
+  color: $white;
+  .footer-box {
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid #4e4e4e;
+    padding-bottom: 20px;
+
+    .footer-text {
+      width: 50%;
+      .content {
+        padding-top: 1.5rem;
+      }
+    }
+    .footer-social {
+      width: 50%;
+      border-left: 1px solid #4e4e4e;
+      padding-left: 20px;
+      .subscribe-box {
+        margin-bottom: 1rem;
+        .subscribe-form {
+          background: #fff 0 0 no-repeat padding-box;
+          border-radius: 32px;
+          display: flex;
+          padding: 5px 5px 5px 14px;
+          margin-block: 1.5rem;
+          .subscribe-input {
+            border: none;
+            color: $primary-color;
+            font-size: $text-headline;
+            font-weight: 700;
+            outline: none;
+            width: 90%;
+          }
+          .subscribe-button {
+            align-items: center;
+            background: $secondary-color 0 0 no-repeat padding-box;
+            border: none;
+            border-radius: 35px;
+            display: flex;
+            flex-direction: row;
+            font-size: 17px;
+            font-weight: 700;
+            justify-content: center;
+            outline: none;
+            padding: 13px 20px;
+            text-align: center;
+            cursor: pointer;
+            img {
+              margin-left: 0.25rem;
+            }
+          }
+        }
+      }
+
+      .social-links {
+        display: flex;
+        // justify-content: space-between;
+        .ul-link {
+          width: 70%;
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+        .ul-social {
+          width: 30%;
+          text-align-last: end;
+          border-left: 1px solid #4e4e4e;
+          li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-direction: row-reverse;
+          }
+        }
+      }
+    }
+  }
+  .copy-write {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 25px;
+  }
+}

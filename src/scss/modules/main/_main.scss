@@ -4,10 +4,13 @@
     gap: 10px;
     padding: 2rem 0;
     flex-wrap: wrap;
+    > a {
+      width: 24%;
+    }
     .card {
       background: $white 0 0 no-repeat padding-box;
       border: 1px solid #ececec;
-      border-radius: 20px;
+      border-radius: 10px;
       height: 405px;
       opacity: 1;
       padding: 8px 7px 11px;
@@ -15,7 +18,7 @@
       -webkit-user-select: none;
       -ms-user-select: none;
       user-select: none;
-      width: 24%;
+      // width: 24%;
       &:hover {
         box-shadow: 0 0 5px #00000026;
       }
@@ -49,13 +52,60 @@
       align-items: center;
       margin-block: 5px;
       .price {
-        color: $primary-color;
-        font-weight: bold;
+        .cost {
+          color: $primary-color;
+          font-weight: bold;
+        }
+        .offer {
+          margin-top: 3px;
+          span {
+            &:first-child {
+              color: #a7a9ac;
+              text-decoration: line-through;
+              padding-right: 1rem;
+              font-weight: bold;
+              font-size: $text-body;
+            }
+            &:last-child {
+              background: $secondary-color;
+              font-size: $text-caption;
+              padding: 5px 15px;
+              border-radius: 5px;
+              font-weight: bold;
+              color: $black;
+            }
+          }
+        }
       }
       img {
         height: 40px;
         width: 64px;
         object-fit: contain;
+      }
+    }
+    .rate-box {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-block: 15px;
+      font-size: $text-body;
+      .rate-icon {
+        display: flex;
+        gap: 1px;
+        color: #ffb900;
+      }
+      .rate-name {
+        font-weight: bold;
+        color: $black;
+      }
+    }
+    .location {
+      font-size: $text-body;
+      display: flex;
+      justify-content: space-between;
+      color: $black;
+      span {
+        font-weight: bold;
       }
     }
     .add-cart {
@@ -70,7 +120,7 @@
       transition: all 0.3s ease-in-out;
       &:hover {
         background: $secondary-color;
-        color:$black;
+        color: $black;
       }
     }
   }
